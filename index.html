@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Schedule</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .schedule {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .schedule-header {
+            background-color: #1E88E5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .day {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .day:last-child {
+            border-bottom: none;
+        }
+
+        .day-header {
+            font-size: 24px;
+            color: #1E88E5;
+            margin-bottom: 10px;
+        }
+
+        .event {
+            margin-bottom: 10px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-left: 4px solid #1E88E5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .event:last-child {
+            margin-bottom: 0;
+        }
+
+        .time {
+            font-weight: bold;
+            font-size: 18px;
+            color: #616161;
+        }
+
+        .subject {
+            font-size: 18px;
+            color: #333;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="schedule">
+    <div class="schedule-header">University Schedule</div>
+    
+    <div class="day">
+        <div class="day-header">Wednesday</div>
+        <div class="event">
+            <div class="time">10:00 - 10:50</div>
+            <div class="subject">Psychology</div>
+        </div>
+        <div class="event">
+            <div class="time">11:00 - 13:00</div>
+            <div class="subject">Architecture</div>
+        </div>
+        <div class="event">
+            <div class="time">13:10 - 14:00</div>
+            <div class="subject">Culturology</div>
+        </div>
+    </div>
+    
+    <div class="day">
+        <div class="day-header">Friday</div>
+        <div class="event">
+            <div class="time">11:00</div>
+            <div class="subject">Psychology</div>
+        </div>
+        <div class="event">
+            <div class="time">14:10 - 17:00</div>
+            <div class="subject">Java</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
 
